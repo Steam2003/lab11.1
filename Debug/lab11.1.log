@@ -1,0 +1,4 @@
+﻿  lab11.1.cpp
+D:\Patiuk\AP\lab_2\labs11\lab11.1\lab11.1.cpp(87,22): warning C4101: 'avgPlus': unreferenced local variable
+D:\Patiuk\AP\lab_2\labs11\lab11.1\lab11.1.cpp(87,12): warning C4101: 'avgMinus': unreferenced local variable
+  lab11.1.vcxproj -> D:\Patiuk\AP\lab_2\labs11\lab11.1\Debug\lab11.1.exe
