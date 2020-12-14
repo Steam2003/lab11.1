@@ -35,14 +35,14 @@ double averageMinus(char* FileName)
     double avgMin = 0;
     while (f.read((char*)&a, sizeof(int)))
     {
-
         if (a < 0)
         {
             ++l;
             avgMin += a;
         }
     }
-    avgMin = (avgMin * 1.0) / l;
+    if (l != 0)
+        avgMin = avgMin / l;
     return avgMin;
 }
 
@@ -58,11 +58,14 @@ double averagePlus(char* FileName)
     double avgPlus = 0;
     while (f.read((char*)&a, sizeof(int)))
     {
-        ++l;
         if (a >= 0)
+        {
+            ++l;
             avgPlus += a;
+        }
     }
-    avgPlus = (avgPlus * 1.0) / l;
+    if (l!=0)
+        avgPlus = avgPlus / l;
     return avgPlus;
 }
 void print(char* FileName)
